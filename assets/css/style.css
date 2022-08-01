@@ -1,0 +1,76 @@
+/* ================ GOOGLE FONTS ================*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+/* ================ VARIABLE CsS ================*/
+:root {
+  /* Primary */
+  --color-VeryDarkBlue: hsl(243, 87%, 12%);
+  --color-DesaturatedBlue: #585989;
+  /* Accent */
+  --color-BrightBlue: #3065f8;
+  --color-ModerateCyan: #3c9f8f;
+  /* Neutral */
+  --color-LightGrayishBlue: hsl(240, 80%, 98%);
+  --color-LightGray: hsl(0, 0%, 75%);
+
+  /* Font weight */
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  /* Font-size */
+  --font-xl: 2.5rem; 
+  --font-l: 2rem;
+  --font-body-m: 1.063rem
+  --font-body-s: 1rem;
+  --font-body-xs: 0.875rem
+  --font-body-1-xs: 0.813rem;
+  --font-body-2-xs: 0.75rem;
+  --font-body-3-xs: 0.688rem;
+  --font-body-4-xs: 0.5rem;
+}
+
+/* RESET CSS */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+a:link{
+  text-decoration: none;
+}
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color-VeryDarkBlue);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* LAYOUT */
+.container {
+  max-width: 69.375rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+
