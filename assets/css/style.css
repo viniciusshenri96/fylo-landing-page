@@ -67,9 +67,26 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Component */
+.btn {
+  border: none;
+  font: var(--fw-bold) var(--font-body-xs)/1.14 "Raleway";
+  color: #fff;
+  padding: 15px 61px 14px 61px;
+  border-radius: 3.125px;
+  background-color: var(--color-BrightBlue);
+  cursor: pointer;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background-color: #6C9BFF;
+}
+
 /* LAYOUT */
 .container {
-  max-width: calc(69.375rem + 64px);
+  max-width: calc(80rem + 64px);
   padding: 0 2rem;
   margin: 0 auto;
 }
@@ -97,3 +114,40 @@ body {
   color: var(--color-VeryDarkBlue);
 }
 
+/* SECTION-HERO */
+.section-hero {
+  padding-bottom: 164px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 13px;
+}
+
+.hero-title {
+  font: var(--fw-bold) var(--font-xl)/1.50 'Raleway';
+  margin-bottom: 15px;
+}
+
+.hero-description {
+  font: var(--fw-regular) 17px/1.41 "Open Sans";
+  letter-spacing: 0.53px;
+  margin-bottom: 25px;
+  max-width: 585px;
+}
+
+.hero-form, .hero-form input::placeholder {
+  font: var(--fw-regular) var(--font-body-xs)/1.35 "Open Sans";
+}
+
+.hero-form {
+  display: flex;
+  gap: 16px;
+}
+
+.hero-form input {
+  border: 0.625px solid #07043B;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+  border-radius: 3.125px;
+  padding: 14px 172px 12px 21px;
+  max-width: 320px;
+}
