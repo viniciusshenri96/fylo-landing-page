@@ -3,14 +3,14 @@
 /* ================ VARIABLE CsS ================*/
 :root {
   /* Primary */
-  --color-VeryDarkBlue: hsl(243, 87%, 12%);
+  --color-VeryDarkBlue: #070439;
   --color-DesaturatedBlue: #585989;
   /* Accent */
   --color-BrightBlue: #3065f8;
   --color-ModerateCyan: #3c9f8f;
   /* Neutral */
-  --color-LightGrayishBlue: hsl(240, 80%, 98%);
-  --color-LightGray: hsl(0, 0%, 75%);
+  --color-LightGrayishBlue: #f6f6fe;
+  --color-LightGray: #bfbfbf;
 
   /* Font weight */
   --fw-regular: 400;
@@ -34,12 +34,13 @@
   padding: 0;
   margin: 0;
 }
+
 a:link{
   text-decoration: none;
 }
 
-ul[role='list'],
-ol[role='list'] {
+ul,
+ol {
   list-style: none;
 }
 
@@ -68,9 +69,31 @@ body {
 
 /* LAYOUT */
 .container {
-  max-width: 69.375rem;
+  max-width: calc(69.375rem + 64px);
   padding: 0 2rem;
   margin: 0 auto;
 }
 
+/* HEADER */
+.header {
+  padding-top: 65px;
+  padding-bottom: 86px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  gap: 58px;
+}
+
+.menu-link:link, .menu-link:visited {
+  display: inline-block;
+  font: var(--fw-regular) 1rem/1.19 "Raleway";
+  color: var(--color-VeryDarkBlue);
+}
 
