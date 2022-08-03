@@ -272,12 +272,8 @@ body {
   padding: 102px 120px 85px 80px;
   color: #ffffff;
   display: grid;
-  justify-content: space-between;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.cta-content {
-  /* grid-column: span 2; */
+  grid-template-columns: 1fr 2fr;
+  gap: 227px;
 }
 
 .cta-title {
@@ -298,13 +294,12 @@ body {
   display: grid;
   justify-items: start;
   row-gap: 1rem;
-  grid-column: span 2;
 }
 
 .cta-form input {
   width: 100%;
   border: none;
-  padding: 16px 224px 18px 22px;
+  padding: 16px 0 18px 22px;
   box-shadow: 2px 3px 6px rgba(7, 4, 59, 0.157043);
   border-radius: 3.125px;
 }
