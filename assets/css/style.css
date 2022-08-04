@@ -49,8 +49,7 @@ img {
   max-width: 100%;
 }
 
-html,
-body {
+html {
   height: 100%;
   overflow-x: hidden;
 }
@@ -65,6 +64,7 @@ body {
   color: var(--color-VeryDarkBlue);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 /* Component */
@@ -272,8 +272,10 @@ body {
   padding: 102px 120px 85px 80px;
   color: #ffffff;
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 227px;
+  grid-template-columns: 1.2fr 1.5fr;
+  justify-items: end;
+  align-items: center;
+  gap: 40px;
 }
 
 .cta-title {
@@ -293,13 +295,18 @@ body {
 .cta-form {
   display: grid;
   justify-items: start;
-  row-gap: 1rem;
+  align-content: start;
+  gap: 16px;
 }
 
 .cta-form input {
-  width: 100%;
+  width: 480px;
+  height: 48px;
   border: none;
   padding: 16px 0 18px 22px;
   box-shadow: 2px 3px 6px rgba(7, 4, 59, 0.157043);
   border-radius: 3.125px;
+}
+.btn-cta {
+  padding: 16px 33px 16px 32px;
 }
