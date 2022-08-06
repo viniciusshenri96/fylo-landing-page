@@ -394,3 +394,10 @@ body {
   border-radius: 50%;
   padding: 6px;
 }
+
+/* RESPONSIVE */
+@media (max-width: 1140px) {
+  .nav {
+    gap: 100px;
+  }
+}
